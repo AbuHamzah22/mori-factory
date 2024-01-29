@@ -1,0 +1,20 @@
+{
+	"name": "Parquetgit",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStoragegit",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "parquet folder",
+				"fileSystem": "parquet"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
